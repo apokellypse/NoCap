@@ -3,7 +3,7 @@ body {
 	text-align: center;
 	background: #327A7F;
 	color: #f2f2f2;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 h1 {
@@ -59,8 +59,8 @@ nav li {
 }
 
 #container {
-	width: 500vw;
-	height: 98vh;
+	width: 473vw;
+	height: 99vh;
 	margin: 0 auto;
 	text-align: right;
 	overflow: hidden;
@@ -93,6 +93,10 @@ section:nth-child(n+2) {
 	height: 100vh;
 	padding: 2% 0;
 
+}
+
+section:last-child {
+	margin-right: 0px;
 }
 
 .pur {
