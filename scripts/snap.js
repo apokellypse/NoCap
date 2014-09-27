@@ -14,7 +14,7 @@ $(document).ready(function() {
 
 		return false;
 	});
-
+ //stackoverflow solution: http://stackoverflow.com/questions/8189840/get-mouse-wheel-events-in-jquery
 	$(window).bind('mousewheel DOMMouseScroll', function(event){
     	if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
         	console.log("up");
