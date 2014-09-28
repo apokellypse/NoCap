@@ -16,15 +16,24 @@
 		<link rel="shortcut icon" href="something.png">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script type="text/javascript" src="scripts/snap.js"></script>
+		<script type="text/javascript" src="scripts/script.js"></script>
 	</head>
 	<body>
 		<div id="container">
 			<section id="sidebar">
 				<div class="logo">
-					<h1>No<span class="yel">Cap</span></h1>
+					<a href="index.html"><h1>No<span class="yel">Cap</span></h1></a>
 				</div>
 				<div class="upload">
-					<h2>Upload</h2>
+					<a href="#"><h2>Upload</h2></a>
+					<div class="phpupload">
+						<form action="upload_file.php" method="post"
+						enctype="multipart/form-data">
+						<label for="file">Filename:</label>
+						<input type="file" name="file" id="file"><br>
+						<input type="submit" name="submit" value="Submit">
+						</form>
+					</div>
 				</div>
 				<div class="gallery">
 					<h2>Gallery</h2>
